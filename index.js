@@ -17,6 +17,8 @@
 
    if (dist < 400) {
      return 0
+   } else if (dist > 400) {
+     return dist * .02
    } else if (dist < 2000) {
      return dist * .02
    } else if (dist < 2500) {
