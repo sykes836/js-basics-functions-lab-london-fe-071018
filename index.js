@@ -15,10 +15,10 @@
  function calculatesFarePrice(start, destination) {
    const dist = Math.abs(start - destination) * 264
 
-   if (dist < 400) {
-     return 0
+   if (dist > 400 && dist < 2000) {
+     return .02
    } else if (dist < 2000) {
-     return dist * .2
+     return dist * .02
    } else if (dist < 2500) {
      return 25
    } else {
